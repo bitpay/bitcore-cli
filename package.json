@@ -1,0 +1,56 @@
+{
+  "name": "bitcore-cli",
+  "version": "0.1.0",
+  "description": "Bitcore executables to run and configure a daemon.",
+  "author": "BitPay <dev@bitpay.com>",
+  "main": "index.js",
+  "bin": {
+    "bitcore": "./bin/bitcore",
+    "bitcored": "./bin/bitcored"
+  },
+  "scripts": {
+    "lint": "gulp lint",
+    "test": "gulp test",
+    "coverage": "gulp coverage"
+  },
+  "contributors": [
+    {
+      "name": "Braydon Fuller",
+      "email": "courier@braydon.com"
+    },
+    {
+      "name": "Chris Kleeschulte",
+      "email": "chrisk@bitpay.com"
+    },
+    {
+      "name": "Patrick Nagurny",
+      "email": "patrick@bitpay.com"
+    },
+    {
+      "name": "Stephen Pair",
+      "email": "stephen@bitpay.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitpay/bitcore-cli.git"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "bitcore-lib": "^0.13.7",
+    "commander": "^2.8.1",
+    "liftoff": "^2.2.0",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.3",
+    "semver": "^5.0.3"
+  },
+  "devDependencies": {
+    "bitcore-build": "bitpay/bitcore-build",
+    "brfs": "^1.2.0",
+    "chai": "^1.10.0",
+    "gulp": "^3.8.10",
+    "proxyquire": "^1.7.3",
+    "sinon": "^1.13.0"
+  },
+  "license": "MIT"
+}
