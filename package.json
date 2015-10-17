@@ -4,10 +4,6 @@
   "description": "Bitcore executables to run and configure a daemon.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
-  "bin": {
-    "bitcore": "./bin/bitcore",
-    "bitcored": "./bin/bitcored"
-  },
   "scripts": {
     "lint": "gulp lint",
     "test": "gulp test",
