@@ -1,10 +1,8 @@
 'use strict';
 
-var bitcore = require('bitcore-lib');
-
-var scaffold = {};
-scaffold.create = require('./lib/create');
-scaffold.getDefaultConfig = require('./lib/create');
-bitcore.scaffold = scaffold;
-
-module.exports = scaffold;
+module.exports = {
+  create: require('./lib/create'),
+  getDefaultConfig: require('./lib/default-config'),
+  bitcore: require('./lib/bitcore'),
+  bitcored: require('./lib/bitcored')
+};
